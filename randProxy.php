@@ -4,7 +4,7 @@
 start(1000);
 
 
-function saveToFile($prx,$filename='proxy.txt') {
+function saveToFile($prx,$filename='proxyRand.txt') {
     $fp = fopen($filename, 'a');
     foreach ($prx as $proxy) {
         fwrite($fp, $proxy . PHP_EOL);
